@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "usfscript-py"
+version = "0.1.0"
+description = "Python continuation of USFscript: build screens, buttons, keyboards and labels and run them as a Desmos graph in Chromium."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "aniketkokatay" }]
+keywords = ["desmos", "usf", "universal step function", "playwright"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests>=2.28",
+    "playwright>=1.40",
+]
+
+[project.urls]
+Homepage = "https://aniketkokatay.github.io/USFscript/"
+Repository = "https://github.com/aniketkokatay/usfscript-py"
+Documentation = "https://github.com/aniketkokatay/usfscript-py/blob/main/docs/documentation.md"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+py-modules = ["usf"]
